@@ -34,7 +34,7 @@ predict the price of a new house from its feature values.
 ● House-price dataset used in the notebook
 ● GitHub for code submission
 
-3. Procedure
+# 3. Procedure
 
 1. Import the required Python libraries..
 

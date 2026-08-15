@@ -1,61 +1,74 @@
-# LAB-2--Linear-Regression-for-House-Price-Predictons
+# Lab 2 - Linear Regression
 
-# Aim
-To develop a Linear Regression model for predicting house prices using a suitable
-dataset.
+## Aim
 
-# 1. Theory
-Linear Regression is a supervised machine learning algorithm used to predict a
-continuous numerical target variable from one or more input features. In simple linear
-regression, the relationship between the input and output is represented by a straight line:
-y = b₀ + b₁x
-For multiple linear regression, several input features are used:
-y = b₀ + b₁x₁ + b₂x₂ + ... + bx
+To develop a Linear Regression model for predicting house prices using a suitable dataset.
 
-In this experiment, the notebook uses a house-price dataset and develops a multiple linear
-regression model using features such as average area income, average area house age,
-average number of rooms, average number of bedrooms, and area population. The model
-is trained using the training data and evaluated on test data using metrics such as Mean
-Squared Error (MSE), R-squared (R²), Mean Absolute Error (MAE), and Root Mean
-Squared Error (RMSE).
-The notebook also includes regularized linear models such as Ridge and Lasso and uses
-feature scaling for the regularized-model workflow. The final model can be used to
-predict the price of a new house from its feature values.
+## Objective
 
+To analyze the USA Housing dataset and develop regression models for predicting house prices.
 
-# 2. Materials Used
-● Python / Google Colab
-● Jupyter Notebook (.ipynb)
-● Pandas
-● NumPy
-● Matplotlib
-● Seaborn
-● Scikit-learn
-● House-price dataset used in the notebook
-● GitHub for code submission
+## Dataset
 
-# 3. Procedure
+The practical uses the **USA Housing Dataset (****`USA_Housing.csv`****)**.
 
-1. Import the required Python libraries..
+The dataset contains information such as:
 
-2. Load the house-price dataset
+- Average Area Income
+- Average Area House Age
+- Average Area Number of Rooms
+- Average Area Number of Bedrooms
+- Area Population
+- Price
 
-3. Inspect the dataset and its features.
+The **Price** column is used as the target variable.
 
-4. Select suitable input features and the target price variable.
+## Models Used
 
-5. Split the data into training and testing sets.
+- Simple Linear Regression
+- Multiple Linear Regression
+- Ridge Regression
+- Lasso Regression
 
-6. Train a Linear Regression model using the training data.
+## Data Processing
 
-7. Generate predictions for the test data.
+- Dataset was loaded using Pandas.
+- Dataset structure and statistical information were analyzed.
+- Missing values were checked.
+- Duplicate records were checked.
+- The `Address` column was removed.
+- Correlation between numerical features was analyzed.
 
-8. Evaluate the model using MSE, R2, MAE and RMSE.
+## Model Evaluation
 
-9. Visualize actual prices against predicted prices.
+The regression models were evaluated using:
 
-10. Use the trained model to predict the price of a new house from user-provided feature values.
+- Mean Absolute Error (MAE)
+- Mean Squared Error (MSE)
+- Root Mean Squared Error (RMSE)
+- R² Score
 
-11. Compare/inspect regularized models such as Ridge and Lasso where included in the notebook.
+## Regularization
 
-12. Record the important outputs and observations.
+Ridge and Lasso Regression were applied to study regularization techniques.
+
+GridSearchCV with 5-fold cross-validation was used to find suitable hyperparameter values.
+
+## Tools and Technologies
+
+- Python
+- Google Colab
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Scikit-learn
+
+## Files
+
+- `Lab2_Linear_Regression.ipynb` – Google Colab notebook containing the practical code.
+- `Dataset/USA_Housing.csv` – Dataset used for house price prediction.
+
+## Conclusion
+
+The USA Housing dataset was used to develop and evaluate different regression models for house price prediction. Simple Linear Regression, Multiple Linear Regression, Ridge Regression and Lasso Regression were implemented and evaluated using suitable performance metrics... rewrite properly gor github
